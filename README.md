@@ -5,11 +5,21 @@ vertical shooter, into native C with an English translation. The original progra
 (`FR2.EXE` → intro, title, stages, cutscenes) runs as recompiled code on an SDL2 runtime with
 Nuked-OPL3 FM music and Sound Blaster speech.
 
+<p align="center">
+  <img src="packaging/fox_ranger_2_gameplay_preview.gif" alt="Fox Ranger II gameplay: Stage 2 and its boss" width="640">
+</p>
+
+| | |
+|:---:|:---:|
+| ![Title screen](docs/screenshots/title.png) | ![Stage 2](docs/screenshots/stage2.png) |
+| ![Stage 2 boss](docs/screenshots/stage2-boss.png) | ![Stage 5 tunnel](docs/screenshots/stage5-tunnel.png) |
+| ![Stage 6 boss](docs/screenshots/stage6-boss.png) | ![Cutscene in English](docs/screenshots/cutscene.png) |
+
 <p align="center"><img src="docs/screenshots/launcher.png" width="640" alt="Launcher"></p>
 
-No original game files are included in this repository or its releases: no executables, graphics,
-sound, music or Korean script. It contains the recompiled code (`gen/`), the runtime and tools, and
-the English translation; the game data comes from your own copy.
+No game files are included in this repository or its releases: no executables, graphics, sound,
+music or Korean script. It contains the recompiled code (`gen/`), the runtime and tools, and the
+English translation; the game data comes from your own copy. Screenshots are for illustration.
 
 ## Playing
 

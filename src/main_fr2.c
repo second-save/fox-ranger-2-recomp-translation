@@ -118,7 +118,7 @@ static void print_usage(const char *prog)
         "  --scale N         window scale (default 3)\n"
         "  --fullscreen\n"
         "  --verbose\n"
-        "  --headless --seconds S --shots T:file.ppm,... --keys T:KEY,... --record DIR\n"
+        "  --headless --seconds S --shots T:file.ppm,... --keys T:KEY,... --record DIR [--record-fps N]\n"
         "\n"
         "Debug environment: FR2_TRACE_EXEC=1, FR2_CALLHIST=1\n", prog);
 }
@@ -153,6 +153,7 @@ int main(int argc, char **argv)
         else if (!strcmp(a, "--shots") && i + 1 < argc) po.shots = argv[++i];
         else if (!strcmp(a, "--keys") && i + 1 < argc) po.keys = argv[++i];
         else if (!strcmp(a, "--record") && i + 1 < argc) po.record_frames = argv[++i];
+        else if (!strcmp(a, "--record-fps") && i + 1 < argc) po.record_fps = atof(argv[++i]);
         else if (!strcmp(a, "--run") && i + 1 < argc) { run_argv = &argv[i + 1]; run_argc = argc - i - 1; break; }
         else { fprintf(stderr, "Unknown option: %s\n", a); print_usage(argv[0]); return 1; }
     }
