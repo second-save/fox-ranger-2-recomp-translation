@@ -1,0 +1,3 @@
+#!/bin/sh
+# C compiler for cmake/zig-windows.cmake
+exec zig cc -target x86_64-windows-gnu "$@"

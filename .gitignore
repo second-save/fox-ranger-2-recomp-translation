@@ -1,0 +1,50 @@
+# Build artifacts
+build/
+build-*/
+cmake-build-*/
+dist/
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.exe
+*.EXE
+*.out
+*.app
+
+# Package outputs & media
+*.zip
+*.tar.gz
+*.dmg
+*.mp4
+*.webm
+*-checksums-sha256.txt
+
+# IDE / system / tooling
+.DS_Store
+.vscode/
+.idea/
+.venv/
+*.swp
+*~
+__pycache__/
+*.pyc
+scratch/
+attic/
+
+# Runtime configuration and saves (keep local)
+foxranger.ini
+foxranger2.ini
+FR.REF
+/--output
+
+# Proprietary DOS game files and anything dumped from them
+Fox-Ranger-II-Second-Mission_DOS_EN/
+fox-ranger/
+work/*
+!work/*.csv
+*.ppm
+*.wav
